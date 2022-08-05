@@ -3,9 +3,9 @@ Linear Regression is a supervised Machine Learning model in which the model find
 
 # Topics Covered 
 - Univariate Linear Regression
-  - Linear Regression that involves a single variable 
+  Linear Regression that involves a single variable 
 - Multivariate Linear Regression
-  - Linear Regression that involves multiple variables 
+  Linear Regression that involves multiple variables 
 - Cost Function: To determine how well the linear regression model performs for the whole training data  
 - Gradient Descent: To minimize the cost function 
 - Normal Equation: To minimize cost function by finding the minimum theta 
