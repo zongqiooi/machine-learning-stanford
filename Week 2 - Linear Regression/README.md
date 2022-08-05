@@ -2,8 +2,10 @@
 Linear Regression is a supervised Machine Learning model in which the model finds the best fit linear line between the independent and dependent variable. This solution was created by using Octave for the Week 2 Linear Regression assignment for Machine Learning by Andrew Ng, Stanford University. 
 
 # Topics Covered 
-- Univariate Linear Regression: Linear Regression that involves a single variable 
-- Multivariate Linear Regression: Linear Regression that involves multiple variables 
+- Univariate Linear Regression
+  - Linear Regression that involves a single variable 
+- Multivariate Linear Regression
+  - Linear Regression that involves multiple variables 
 - Cost Function: To determine how well the linear regression model performs for the whole training data  
 - Gradient Descent: To minimize the cost function 
 - Normal Equation: To minimize cost function by finding the minimum theta 
