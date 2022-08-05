@@ -18,26 +18,26 @@ You would like to use this data to help you select which city to expand to next.
 The final values for θ will also be used to make predictions on profits in areas of 35,000 and 70,000 people.
 
 # Result of Linear Regression
-- Cost Fucntion 
+**Cost Function**
  
 ![image](https://user-images.githubusercontent.com/95561298/183005257-cc44c8c3-adac-4e72-a609-d842d04c4390.png)
 
-- Theta Values Found by Gradient Descent
+**Theta Values Found by Gradient Descent**
 
 ![image](https://user-images.githubusercontent.com/95561298/183005485-015bdbdf-fadc-494a-bddb-344dc3d41fbc.png)
 
-- Plot of Linear Regression Line with Training Data 
+**Plot of Linear Regression Line with Training Data**
 
 ![image](https://user-images.githubusercontent.com/95561298/183005140-ac413fe8-994d-4e0d-a621-98293a4d3671.png)
 
-- Plot of J(theta_0, theta_1)
+**Plot of Cost Function, J(theta_0, theta_1)**
 
 ![image](https://user-images.githubusercontent.com/95561298/183005176-ec3f1d6f-941b-4aab-b765-d8668d6593c9.png)
 
-- Plot of Contour for J(theta_0, theta_1)
+**Plot of Contour for Cost Function, J(theta_0, theta_1)**
 
 ![image](https://user-images.githubusercontent.com/95561298/183005186-7e140995-a29b-4fdf-b206-078719a4accb.png)
 
-- Final Prediction Results for Profits in Areas of 35,000 and 70,000 People by Using Linear Regression Model
+**Final Prediction Results for Profits in Areas of 35,000 and 70,000 People by Using Linear Regression Model**
 
 ![image](https://user-images.githubusercontent.com/95561298/183005547-defa94c1-6500-4f9e-8764-becc1d19427e.png)
