@@ -11,14 +11,14 @@ Logistic Regression is a supervised Machine Learning model in which the model pr
 - Decision Boundary (Line that separates the data into two sets for logistic regression)
 
 # Information about Logistic Regression 
-<u>Part 1</u>
+## Part 1
 In this part of the exercise, you will build a logistic regression model to predict whether a student gets admitted into a university.
 
 Suppose that you are the administrator of a university department and you want to determine each applicant’s chance of admission based on their results on two exams. You have historical data from previous applicants that you can use as a training set for logistic regression. For each training example, you have the applicant’s scores on two exams and the admissions decision.
 
 After learning the parameters, the model will be used to predict whether a particular student with an Exam 1 score of 45 and an Exam 2 score of 85 will be admitted. 
 
-<u>Part 2</u>
+## Part 2
 In this part of the exercise, you will implement regularized logistic regression to predict whether microchips from a fabrication plant passes quality assurance (QA). During QA, each microchip goes through various tests to ensure it is functioning correctly.
 
 Suppose you are the product manager of the factory and you have the test results for some microchips on two different tests. From these two tests, you would like to determine whether the microchips should be accepted or rejected. To help you make the decision, you have a dataset of test results on past microchips, from which you can build a logistic regression model.
@@ -26,7 +26,7 @@ Suppose you are the product manager of the factory and you have the test results
 Then, the accuracy of logistic regression will be determined. 
 
 # Result of Logistic Regression
-<u>Part 1</u>
+## Part 1
 **Cost and Gradient Computed by using Gradient Descent**
 
 ![image](https://user-images.githubusercontent.com/95561298/183305688-d23d75b0-2a6a-43e2-93cc-8029f8ddbc61.png)
@@ -47,7 +47,7 @@ Then, the accuracy of logistic regression will be determined.
 
 ![image](https://user-images.githubusercontent.com/95561298/183305863-b8aece2f-aa29-431f-8a4c-eba3c0eac737.png)
 
-<u>Part 2</u>
+## Part 2
 **Cost and Gradient Computed by using Gradient Descent**
 
 ![image](https://user-images.githubusercontent.com/95561298/183305924-12901c77-4f2c-4c42-99b4-2a7138ec28d3.png)
