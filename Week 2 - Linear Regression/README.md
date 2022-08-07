@@ -1,5 +1,5 @@
 # Linear Regression
-Linear Regression is a supervised Machine Learning model in which the model finds the best fit linear line between the independent and dependent variable. This solution was created by using Octave for the Week 2 Linear Regression assignment for Machine Learning by Andrew Ng, Stanford University. 
+Linear Regression is a supervised Machine Learning model in which the model finds the best fit linear line between the independent and dependent variable. Linear Regression is under the "regression" category in Supervised Learning in which it predicts results within a continuous output. This solution was created by using Octave for the Week 2 Linear Regression assignment for Machine Learning by Andrew Ng, Stanford University. 
 
 # Topics Covered 
 - Univariate Linear Regression (Linear Regression that involves a single variable)
@@ -8,7 +8,7 @@ Linear Regression is a supervised Machine Learning model in which the model find
 - Gradient Descent (To minimize the cost function)
 - Normal Equation (To minimize cost function by finding the minimum theta)
 - Feature Scaling (For gradient descent to maximize its efficiency; only used for gradient descent, not for normal equation)
-- Vectorization (To allow the program runs much faster and efficiently)
+- Vectorization (To allow the program runs much faster and more efficiently)
 
 # Information about Linear Regression 
 In this part of this exercise, you will implement linear regression with one variable to predict profits for a food truck. Suppose you are the CEO of a restaurant franchise and are considering different cities for opening a new outlet. The chain already has trucks in various cities and you have data for profits and populations from the cities.
