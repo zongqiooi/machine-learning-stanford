@@ -2,45 +2,64 @@
 Logistic Regression is a supervised Machine Learning model in which the model predicts a discrete binary result. Logistic Regression is under the "classification" category in Supervised Learning in which it predicts results within a discrete output. This solution was created by using Octave for the Week 3 Logistic Regression assignment for Machine Learning by Andrew Ng, Stanford University. 
 
 # Topics Covered 
+- Binary Classification (Logistic Regression that involves two classes only) 
+- Multi-class Classificaation (Logistic Regression that involves more than two classes)
+- Sigmoid Function / Logistic Function (Function that allows the output of logistic regression to be within 0 to 1)
+- Underfitting (Logisitc regression model too simple, results in inaccurate prediction because of the wrong hypothesis)
+- Overfitting (Logistic regression model too complex, results in inaccurate prediction because it fails to generalize on new examples)
+- Regularization (To solve overfitting problem by adding a new regularization term at the end of equation) 
+- Decision Boundary (Line that separates the data into two sets for logistic regression)
 
+# Information about Logistic Regression 
+<u>Part 1</u>
+In this part of the exercise, you will build a logistic regression model to predict whether a student gets admitted into a university.
 
+Suppose that you are the administrator of a university department and you want to determine each applicant’s chance of admission based on their results on two exams. You have historical data from previous applicants that you can use as a training set for logistic regression. For each training example, you have the applicant’s scores on two exams and the admissions decision.
 
-- Univariate Linear Regression (Linear Regression that involves a single variable)
-- Multivariate Linear Regression (Linear Regression that involves multiple variables)
-- Cost Function (To determine how well the linear regression model performs for the whole training data)
-- Gradient Descent (To minimize the cost function)
-- Normal Equation (To minimize cost function by finding the minimum theta)
-- Feature Scaling (For gradient descent to maximize its efficiency; only used for gradient descent, not for normal equation)
-- Vectorization (To allow the program runs much faster and efficiently)
+After learning the parameters, the model will be used to predict whether a particular student with an Exam 1 score of 45 and an Exam 2 score of 85 will be admitted. 
 
-# Information about Linear Regression 
-In this part of this exercise, you will implement linear regression with one variable to predict profits for a food truck. Suppose you are the CEO of a restaurant franchise and are considering different cities for opening a new outlet. The chain already has trucks in various cities and you have data for profits and populations from the cities.
+<u>Part 2</u>
+In this part of the exercise, you will implement regularized logistic regression to predict whether microchips from a fabrication plant passes quality assurance (QA). During QA, each microchip goes through various tests to ensure it is functioning correctly.
 
-You would like to use this data to help you select which city to expand to next. The file ex1data1.txt contains the dataset for our linear regression problem. The first column is the population of a city and the second column is the profit of a food truck in that city. A negative value for profit indicates a loss.
+Suppose you are the product manager of the factory and you have the test results for some microchips on two different tests. From these two tests, you would like to determine whether the microchips should be accepted or rejected. To help you make the decision, you have a dataset of test results on past microchips, from which you can build a logistic regression model.
 
-The final values for θ will also be used to make predictions on profits in areas of 35,000 and 70,000 people.
+Then, the accuracy of logistic regression will be determined. 
 
-# Result of Linear Regression
-**Cost Function**
+# Result of Logistic Regression
+<u>Part 1</u>
+**Cost and Gradient Computed by using Gradient Descent**
+
+![image](https://user-images.githubusercontent.com/95561298/183305688-d23d75b0-2a6a-43e2-93cc-8029f8ddbc61.png)
  
-![image](https://user-images.githubusercontent.com/95561298/183005257-cc44c8c3-adac-4e72-a609-d842d04c4390.png)
+**Cost and Gradient Computed by using fminunc() Optimization Algorithm**
 
-**Theta Values Found by Gradient Descent**
+![image](https://user-images.githubusercontent.com/95561298/183305772-9234e860-ecf0-4125-8bb2-0570ff8c178e.png)
 
-![image](https://user-images.githubusercontent.com/95561298/183005485-015bdbdf-fadc-494a-bddb-344dc3d41fbc.png)
+**Final Prediction Results for the Admission Probability of a student with an Exam 1 score of 45 and an Exam 2 score of 85 by Using Logistic Regression Model**
 
-**Plot of Linear Regression Line with Training Data**
+![image](https://user-images.githubusercontent.com/95561298/183305785-53861abc-4823-4791-9b4e-387995acadeb.png)
 
-![image](https://user-images.githubusercontent.com/95561298/183005140-ac413fe8-994d-4e0d-a621-98293a4d3671.png)
+**Accuracy of Logistic Regression Model**
 
-**Plot of Cost Function, J(theta_0, theta_1)**
+![image](https://user-images.githubusercontent.com/95561298/183305856-c55a64f2-633f-46c4-aa8d-1f829b50b7bc.png)
 
-![image](https://user-images.githubusercontent.com/95561298/183005176-ec3f1d6f-941b-4aab-b765-d8668d6593c9.png)
+**Plot of Decision Boundary for Logistic Regression with Training Data**
 
-**Plot of Contour for Cost Function, J(theta_0, theta_1)**
+![image](https://user-images.githubusercontent.com/95561298/183305863-b8aece2f-aa29-431f-8a4c-eba3c0eac737.png)
 
-![image](https://user-images.githubusercontent.com/95561298/183005186-7e140995-a29b-4fdf-b206-078719a4accb.png)
+<u>Part 2</u>
+**Cost and Gradient Computed by using Gradient Descent**
 
-**Final Prediction Results for Profits in Areas of 35,000 and 70,000 People by Using Linear Regression Model**
+![image](https://user-images.githubusercontent.com/95561298/183305924-12901c77-4f2c-4c42-99b4-2a7138ec28d3.png)
+ 
+**Cost and Gradient Computed by using fminunc() Optimization Algorithm**
 
-![image](https://user-images.githubusercontent.com/95561298/183005547-defa94c1-6500-4f9e-8764-becc1d19427e.png)
+![image](https://user-images.githubusercontent.com/95561298/183305952-68b95b80-5879-44e5-80da-e5d0c43abb80.png)
+
+**Accuracy of Logistic Regression Model**
+
+![image](https://user-images.githubusercontent.com/95561298/183305899-2332304d-24cb-48d5-9d97-28fea194c7d1.png)
+
+**Plot of Decision Boundary for Logistic Regression with Training Data**
+
+![image](https://user-images.githubusercontent.com/95561298/183305885-a4d92545-3058-4fcd-b640-5fd21dde5ef8.png)
