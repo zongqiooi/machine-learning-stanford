@@ -3,11 +3,11 @@ Logistic Regression is a supervised Machine Learning model in which the model pr
 
 # Topics Covered 
 - Binary Classification (Logistic Regression that involves two classes only) 
-- Multi-class Classificaation (Logistic Regression that involves more than two classes)
+- Multi-class Classification (Logistic Regression that involves more than two classes)
 - Sigmoid Function / Logistic Function (Function that allows the output of logistic regression to be within 0 to 1)
-- Underfitting (Logisitc regression model too simple, results in inaccurate prediction because of the wrong hypothesis)
+- Underfitting (Logistic regression model too simple, results in inaccurate prediction because of the wrong hypothesis)
 - Overfitting (Logistic regression model too complex, results in inaccurate prediction because it fails to generalize on new examples)
-- Regularization (To solve overfitting problem by adding a new regularization term at the end of equation) 
+- Regularization (To solve the overfitting problem by adding a new regularization term at the end of the equation) 
 - Decision Boundary (Line that separates the data into two sets for logistic regression)
 
 # Information about Logistic Regression 
@@ -19,7 +19,7 @@ Suppose that you are the administrator of a university department and you want t
 After learning the parameters, the model will be used to predict whether a particular student with an Exam 1 score of 45 and an Exam 2 score of 85 will be admitted. 
 
 ## Part 2
-In this part of the exercise, you will implement regularized logistic regression to predict whether microchips from a fabrication plant passes quality assurance (QA). During QA, each microchip goes through various tests to ensure it is functioning correctly.
+In this part of the exercise, you will implement regularized logistic regression to predict whether microchips from a fabrication plant passes quality assurance (QA). During QA, each microchip goes through various tests to ensure it is functioning correctly.
 
 Suppose you are the product manager of the factory and you have the test results for some microchips on two different tests. From these two tests, you would like to determine whether the microchips should be accepted or rejected. To help you make the decision, you have a dataset of test results on past microchips, from which you can build a logistic regression model.
 
