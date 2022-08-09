@@ -52,6 +52,6 @@ The neural netork model is as shown below:
 ![image](https://user-images.githubusercontent.com/95561298/183640142-7f5936b1-f550-4d76-8f98-0f715c95235b.png)
 
 # Conclusion 
-The accuracy for Multi-class Classification and Neural Networks are 94.78 
+The accuracy for Multi-class Classification and Neural Networks are 94.78 and 97.52
 
 form more complex hypotheses
