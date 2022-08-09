@@ -1,65 +1,57 @@
 # Multi-class Classification and Neural Networks
-Multi-class Classification is logistic regression that involves multiple classes. Neural Netoworks is an algorithm that try to mimic the brain and it is mainly used for complex and non-linear hypothesis. This solution was created by using Octave for the Week 4 Multi-class Classification and Neural Networks assignment for Machine Learning by Andrew Ng, Stanford University. 
+Multi-class Classification is logistic regression that involves multiple classes. Neural Netoworks is an algorithm that try to mimic the brain and it is mainly used for complex and non-linear hypothesis. Neural networks is also known as artificial neural networks (ANNs). This solution was created by using Octave for the Week 4 Multi-class Classification and Neural Networks assignment for Machine Learning by Andrew Ng, Stanford University. 
 
 # Topics Covered 
-- Binary Classification (Logistic Regression that involves two classes only) 
 - Multi-class Classification (Logistic Regression that involves more than two classes)
-- Sigmoid Function / Logistic Function (Function that allows the output of logistic regression to be within 0 to 1)
-- Underfitting (Logistic regression model too simple, results in inaccurate prediction because of the wrong hypothesis)
-- Overfitting (Logistic regression model too complex, results in inaccurate prediction because it fails to generalize on new examples)
-- Regularization (To solve the overfitting problem by adding a new regularization term at the end of the equation) 
-- Decision Boundary (Line that separates the data into two sets for logistic regression)
+- Neural Networks (An algorithm that try to mimic the brain)
+- Input Layer (Layer of nodes that represent the inputs)
+- Hidden Layer (Layer of nodes between input layer and output layer) 
+- Output Layer (Layer of nodes that represent the output)
+- Forward Propagation (Input data is fed in the forward direction through the neural networks)
 
-# Information about Logistic Regression 
-## Part 1
-In this part of the exercise, you will build a logistic regression model to predict whether a student gets admitted into a university.
+# Information about Multi-class Classification and Neural Networks
+## Part 1: Multi-class Classification 
+For this exercise, you will use logistic regression and neural networks to recognize handwritten digits (from 0 to 9). Automated handwritten digit recognition is widely used today - from recognizing zip codes (postal codes) on mail envelopes to recognizing amounts written on bank checks. This exercise will show you how the methods you’ve learned can be used for this classification task.
 
-Suppose that you are the administrator of a university department and you want to determine each applicant’s chance of admission based on their results on two exams. You have historical data from previous applicants that you can use as a training set for logistic regression. For each training example, you have the applicant’s scores on two exams and the admissions decision.
+In the first part of the exercise, you will extend your previous implemention of logistic regression and apply it to one-vs-all classification.
 
-After learning the parameters, the model will be used to predict whether a particular student with an Exam 1 score of 45 and an Exam 2 score of 85 will be admitted. 
+## Part 2: Neural Networks
+In the previous part of this exercise, you implemented multi-class logistic regression to recognize handwritten digits. However, logistic regression cannot form more complex hypotheses as it is only a linear classifier.
 
-## Part 2
-In this part of the exercise, you will implement regularized logistic regression to predict whether microchips from a fabrication plant passes quality assurance (QA). During QA, each microchip goes through various tests to ensure it is functioning correctly.
+In this part of the exercise, you will implement a neural network to recognize handwritten digits using the same training set as before. The neural network will be able to represent complex models that form non-linear hypotheses. For this week, you will be using parameters from a neural network that we have already trained. Your goal is to implement the feedforward propagation algorithm to use our weights for prediction.
 
-Suppose you are the product manager of the factory and you have the test results for some microchips on two different tests. From these two tests, you would like to determine whether the microchips should be accepted or rejected. To help you make the decision, you have a dataset of test results on past microchips, from which you can build a logistic regression model.
+The neural netork model is as shown below: 
 
-Then, the accuracy of logistic regression will be determined. 
+![image](https://user-images.githubusercontent.com/95561298/183638986-f3e914a5-d139-4149-be8f-dda368cbd090.png)
 
-# Result of Logistic Regression
-## Part 1
+# Result of Multi-class Classification and Neural Networks
+## Part 1: Multi-class Classification 
+**Training Dataset**
+
+![image](https://user-images.githubusercontent.com/95561298/183639056-97117dcf-ec0f-4c40-b23c-71c22a2263d1.png)
+
 **Cost and Gradient Computed by using Gradient Descent**
 
-![image](https://user-images.githubusercontent.com/95561298/183305688-d23d75b0-2a6a-43e2-93cc-8029f8ddbc61.png)
- 
-**Cost and Gradient Computed by using fminunc() Optimization Algorithm**
+![image](https://user-images.githubusercontent.com/95561298/183639383-b7d0de9a-2cc4-46eb-944e-7389b6294121.png)
 
-![image](https://user-images.githubusercontent.com/95561298/183305772-9234e860-ecf0-4125-8bb2-0570ff8c178e.png)
+**Training Set Accuracy by Multi-class Classification**
 
-**Final Prediction Results for the Admission Probability of a student with an Exam 1 score of 45 and an Exam 2 score of 85 by Using Logistic Regression Model**
+![image](https://user-images.githubusercontent.com/95561298/183639499-5600866e-e586-4d19-8444-1f17e1f4d56a.png)
 
-![image](https://user-images.githubusercontent.com/95561298/183305785-53861abc-4823-4791-9b4e-387995acadeb.png)
+## Part 2: Neural Networks
+**Training Set Accuracy by Neural Networks**
 
-**Accuracy of Logistic Regression Model**
+![image](https://user-images.githubusercontent.com/95561298/183639723-82419672-9189-4a99-80f7-bafb919fe4b5.png)
 
-![image](https://user-images.githubusercontent.com/95561298/183305856-c55a64f2-633f-46c4-aa8d-1f829b50b7bc.png)
+**Some Prediction Results for Handwritten Digits by Neural Networks**
 
-**Plot of Decision Boundary for Logistic Regression with Training Data**
+![image](https://user-images.githubusercontent.com/95561298/183639993-a156056b-e82f-4ea0-b1da-013edbb95a8a.png)
 
-![image](https://user-images.githubusercontent.com/95561298/183305863-b8aece2f-aa29-431f-8a4c-eba3c0eac737.png)
+![image](https://user-images.githubusercontent.com/95561298/183640083-e99d61fc-2baf-4c0a-8fb1-5b2514615d2d.png)
 
-## Part 2
-**Cost and Gradient Computed by using Gradient Descent**
+![image](https://user-images.githubusercontent.com/95561298/183640142-7f5936b1-f550-4d76-8f98-0f715c95235b.png)
 
-![image](https://user-images.githubusercontent.com/95561298/183305924-12901c77-4f2c-4c42-99b4-2a7138ec28d3.png)
- 
-**Cost and Gradient Computed by using fminunc() Optimization Algorithm**
+# Conclusion 
+The accuracy for Multi-class Classification and Neural Networks are 
 
-![image](https://user-images.githubusercontent.com/95561298/183305952-68b95b80-5879-44e5-80da-e5d0c43abb80.png)
-
-**Accuracy of Logistic Regression Model**
-
-![image](https://user-images.githubusercontent.com/95561298/183305899-2332304d-24cb-48d5-9d97-28fea194c7d1.png)
-
-**Plot of Decision Boundary for Logistic Regression with Training Data**
-
-![image](https://user-images.githubusercontent.com/95561298/183305885-a4d92545-3058-4fcd-b640-5fd21dde5ef8.png)
+form more complex hypotheses
