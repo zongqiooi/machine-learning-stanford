@@ -40,7 +40,7 @@ In order to train neural networks, there are a total of 6 steps are required:
 
 **Visualization of the Hidden Units Computed**
 
-![image](https://user-images.githubusercontent.com/95561298/184213313-2624ecfb-d6e1-4a85-ace8-035a5a8cea01.png)
+![image](https://user-images.githubusercontent.com/95561298/184214047-2c2ab71a-f4b2-422c-bedb-bad6a328dabb.png)
 
 **Training Set Accuracy by Neural Networks**
 
