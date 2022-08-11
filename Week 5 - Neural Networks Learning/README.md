@@ -1,15 +1,15 @@
 # Neural Networks Learning
-Backpropagation is an algorithm used to minimize the cost function and to learn the parameters for neural networks. This solution was created by using Octave for the Week 5 Neural Networks Learning assignment for Machine Learning by Andrew Ng, Stanford University. 
+Backpropagation is an algorithm used to minimize the cost function and learn the parameters for neural networks. This solution was created by using Octave for the Week 5 Neural Networks Learning assignment for Machine Learning by Andrew Ng, Stanford University. 
 
 # Topics Covered 
-- Backpropagation (An alogorithm to minimize the cost function and to learn the parameters for neural networks) 
+- Backpropagation (An algorithm to minimize the cost function and learn the parameters for neural networks) 
 - Gradient Checking (To compare with the results obtained from backpropagation to ensure no bugs in implementation) 
 - Random Initialization (To randomly initialize the theta values in backpropagation so that symmetry ways can be avoided)
 
 # Information about Neural Networks Learning 
 In this exercise, you will implement the backpropagation algorithm to learn the parameters for the neural network.
 
-In order to train neural networks, there are a total of 6 steps that are required: 
+In order to train neural networks, there are a total of 6 steps are required: 
 1) Randomly initialize the weights
 2) Implement forward propagation to get hΘ(x(i)) for any x(i)
 3) Implement the cost function
