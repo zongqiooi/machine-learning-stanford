@@ -28,7 +28,7 @@ The neural network model is as shown below:
 ## Part 1: Multi-class Classification 
 **Training Dataset**
 
-![image](https://user-images.githubusercontent.com/95561298/183640605-950708e1-42d7-4738-b87b-c1b25136ba22.png)
+![image](https://user-images.githubusercontent.com/95561298/184213923-b33d4d37-e164-4f1a-a40e-0ef981f16a90.png)
 
 **Cost and Gradient Computed by using Gradient Descent**
 
