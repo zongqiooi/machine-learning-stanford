@@ -59,6 +59,8 @@ In this part, you will go through some diagnostics of debugging learning algori
 
 ![image](https://user-images.githubusercontent.com/95561298/184636412-c9e20fec-54b6-4161-bcd3-a970b7143d50.png)
 
+
+
 **Plot of Training Error and Cross Validation Error against λ to Select λ Value**
 
 ![image](https://user-images.githubusercontent.com/95561298/184636525-104b850c-eea5-4fee-bdf0-1c4297e9aceb.png)
