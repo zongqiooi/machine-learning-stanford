@@ -1,65 +1,65 @@
-# Regularized Linear Regression and Bias v.s Variance
-Bias and variance are used to indicate whether the data is underfitting or overfitting.
-The learning curve is used to plot the training error and cross validation error to determine whether is there a high bias or high variance in the classifier. This solution was created by using Octave for the Week 6 - Regularized Linear Regression and Bias v.s Variance assignment for Machine Learning by Andrew Ng, Stanford University. 
+# Support Vector Machines 
+Support Vector Machines is a supervised learning model used to analyze complex non-linear functions. This solution was created by using Octave for the Week 7 - Support Vector Machines for Machine Learning by Andrew Ng, Stanford University. 
 
 # Topics Covered 
-- Learning Curve (Plot of training error & cross validation error as a function of training set size; used to determine high bias and high variance)
-- Bias (To indicate the amount that a model’s prediction differs from the target value, compared to the training data; high bias indicates underfitting) 
-- Variance (To indicate how much the estimate of the target function will alter if different training data were used; high variance indicates overfitting)
-- Training Set (60% of data that the model will learn)
-- Cross Validation Set (20% of data used to determine the regularization parameter)
-- Test Set (20% of data used to evaluate the performance of the model, also known as the "unseen" examples)
-- Precision (To quantify the number of positive class predictions that actually belong to the positive class)
-- Recall (To quantify the number of positive class predictions made out of all positive examples in the dataset)
-- F1 Score (To compute a score that balances both the concerns of precision and recall in one number)
+- Support Vector Machines (Supervised learning model used to analyze complex non-linear function)
+- Large Margin Classifier (Another term for support vector machines; support vector machines will find a decision boundary that has the largest margin)
+- Kernels (To compute the dot product of two vectors x and y in some feature space)
+- Gaussian Kernel (To transform the dot product in the infinite-dimensional space into the Gaussian function of the distance between points in the data space)
 
-# Information about Regularized Linear Regression and Bias v.s Variance
-## Part 1: Regularized Linear Regression 
-In the first half of the exercise, you will implement regularized linear regression to predict the amount of water flowing out of a dam using the change of water level in a reservoir.
+# Information about Support Vector Machines and Spam Classifier 
+## Part 1: Support Vector Machines
+In the first half of this exercise, you will be using support vector machines (SVMs) with various example 2D datasets. Experimenting with these datasets will help you gain an intuition of how SVMs work and how to use a Gaussian kernel with SVMs. 
 
-## Part 2: Bias v.s Variance 
-In this part, you will go through some diagnostics of debugging learning algorithms and examine the effects of bias v.s. variance.
+## Part 2: Spam Classifier 
+In this part, you will be using support vector machines to build a spam classifier.
 
-# Result of Regularized Linear Regression and Bias v.s Variance
-## Part 1: Regularized Linear Regression 
-**Plot of training data** 
+# Result of Support Vector Machines and Spam Classifier 
+## Part 1: Support Vector Machines 
+**Plot of training data 1**
 
-![image](https://user-images.githubusercontent.com/95561298/184635232-f18f1f75-0efb-4757-992e-5a11ad9ca185.png)
+![image](https://user-images.githubusercontent.com/95561298/184953717-cf21dcf6-8102-4d2f-b52f-3661e8008429.png)
 
-**Cost Function with Regularization**
+**Plot of SVM Decision Boundary with C = 1** 
 
-![image](https://user-images.githubusercontent.com/95561298/184635429-88caab3c-7b17-473e-8a26-bc5ebb7dc09f.png)
+![image](https://user-images.githubusercontent.com/95561298/184953795-1adf8c75-25f7-45fe-b1f6-f055a3767d57.png)
 
-**Gradient with Regularization** 
+**Gaussian Kernel Computed** 
 
-![image](https://user-images.githubusercontent.com/95561298/184635670-2fc71ea1-a747-480e-97ef-6a25a2a928a0.png)
+![image](https://user-images.githubusercontent.com/95561298/184954244-e0f88ea0-9f6d-4150-a2d4-2a3626f74842.png)
 
-## Part 2: Bias v.s Variance 
+**Plot of training data 3**
 
-**Regularized Linear Regression with Underfitting** 
+![image](https://user-images.githubusercontent.com/95561298/184953995-fb34decc-81ea-498c-8336-e6bad1f6236f.png)
 
-![image](https://user-images.githubusercontent.com/95561298/184635740-b69f8f8d-3e31-4245-9458-0300c3b912ad.png)
+**Plot of SVM with a Gaussian Kernel Decision Boundary**
 
-**Learning Curve with Underfitting (High Bias -> High Training Error and High Cross Validation Error)**
+![image](https://user-images.githubusercontent.com/95561298/184954352-d1bd53dc-9ba4-4f1e-a789-c57330b75bbb.png)
 
-![image](https://user-images.githubusercontent.com/95561298/184635892-20995e7c-bee4-45de-8d11-d73856834f3e.png)
+**Plot of training data 3**
 
-**Cost, Training Error, and Cross Validation Error Computed for Underfitting** 
+![image](https://user-images.githubusercontent.com/95561298/184954647-a8bb9e2f-7d4a-4f69-b0bf-80f4ca57a50d.png)
 
-![image](https://user-images.githubusercontent.com/95561298/184636118-ecf1085c-ab6f-4197-9b97-6661059d62e4.png)
+**Plot of SVM with a Gaussian Kernel Decision Boundary**
 
-**Regularized Linear Regression with Overfitting** 
+![image](https://user-images.githubusercontent.com/95561298/184955002-5bcd60fc-ef82-4078-9bd4-41ad2a0c1427.png)
 
-![image](https://user-images.githubusercontent.com/95561298/184636342-b14d6628-338f-461e-8f28-cf60bed8bb12.png)
+## Part 2: Spam Classifier
+**Preprocessed Sample Email and Word Indices for Sample Email**
+![image](https://user-images.githubusercontent.com/95561298/184955282-57a2b7e4-0f58-4be2-b8d1-bd63bf4dd800.png)
 
-**Learning Curve with Overfitting (High Variance -> Big Gap Between Training Error and Cross Validation Error)**
+**Features Extracted From Emails**
 
-![image](https://user-images.githubusercontent.com/95561298/184636360-309745db-54f5-48a1-a8bc-73ab1fdb98ac.png)
+![image](https://user-images.githubusercontent.com/95561298/184955415-caf983a3-4815-41ec-8700-4d6f1248f6bd.png)
 
-**Cost, Training Error, and Cross Validation Error Computed for Overfitting** 
+**Training and Test Accuracy**
 
-![image](https://user-images.githubusercontent.com/95561298/184636412-c9e20fec-54b6-4161-bcd3-a970b7143d50.png)
+![image](https://user-images.githubusercontent.com/95561298/184957160-33c375c3-8693-4642-8deb-41acbf075356.png)
 
-**Plot of Training Error and Cross Validation Error against λ to Select λ Value**
+**Top Words Predicted of Spam**
 
-![image](https://user-images.githubusercontent.com/95561298/184636525-104b850c-eea5-4fee-bdf0-1c4297e9aceb.png)
+![image](https://user-images.githubusercontent.com/95561298/184957310-81f2114b-a4be-43bc-b75c-bcbfa536d873.png)
+
+**Result of Spam Classifier For a Sample Email Input**
+
+![image](https://user-images.githubusercontent.com/95561298/184957789-b54c82cf-a35f-4f86-834c-71a4e507ea46.png)
