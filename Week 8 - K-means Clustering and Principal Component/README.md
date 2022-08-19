@@ -1,11 +1,11 @@
 # K-means Clustering and Principal Component Analysis
-Unsupervised Learning uses machine learning algorithms to analyze and cluster unlabeled datasets. Examples of unsupervised learning are K-means Clustering and Dimensionality reduction. K-means Clustering is an unsupervised learning algorithm that clusters the unlabeled data into K-groups. Principal Component Analysis is used for data compression to speed up learning algorithms by mapping high dimensional features x to lower dimensional representation z. This solution was created by using Octave for the Week 8 - K-means Clustering and Principal Component for Machine Learning by Andrew Ng, Stanford University. 
+Unsupervised Learning uses machine learning algorithms to analyze and cluster unlabeled datasets. Examples of unsupervised learning are K-means Clustering and Principal Components Analysis. K-means Clustering is an unsupervised learning algorithm that clusters the unlabeled data into K-groups. Principal Component Analysis is also an unsupervised learning algorithm used for data compression to speed up learning algorithms. This solution was created by using Octave for the Week 8 - K-means Clustering and Principal Component for Machine Learning by Andrew Ng, Stanford University. 
 
 # Topics Covered 
 - Unsupervised Learning (A type of algorithm that learns patterns from unlabelled data)
 - K-means Clustering (An unsupervised learning algorithm that groups unlabelled data into K-groups)
-- Dimensionality Reduction (An unsupervised learning algorithm that reduces a high dimensional features x to lower dimensional representation z)
-- Principal Components Analysis (To speed up the learning algorithm, compress the data, or visualize the data)
+- Principal Components Analysis (An unsupervised learning algorithm that used dimensionality reduction to reduce high dimensional features x to lower dimensional representation z. It is usually used to speed up the learning algorithm, compress the data, or visualize the data)
+- Dimensionality Reduction (A method used by Principal Components Analysis to reduce the dimensions of features x) 
 - Random Initialization (To randomly initialize the centroid to the training data for K-means Clustering)
 - Elbow Method (To identify how many clusters that have to be chosen for K-means Clustering)
 
