@@ -3,6 +3,3 @@ This course provides a broad introduction to machine learning, datamining, and s
 
 # Information
 This repository contains all the assignments that I have submitted for all the coursework. Visit the weekly folders to read more about the projects. 
-
-# Course Link 
-[Machine Learning](https://www.coursera.org/learn/machine-learning-course/home/info)
